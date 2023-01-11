@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 
 
 
@@ -13,8 +13,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterLink,
-    RouterLinkActive
+    RouterModule,
   ],
   exports: [
     HeaderComponent,
